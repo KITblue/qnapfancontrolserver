@@ -31,8 +31,8 @@
           "packages": {
             "x86": {
               "download_url": "https://github.com/KITblue/qnapfancontrolserver/releases/download/v1.3.7.1/FanControlServer-v1.3.7.1-qnapfancontrol-iframe.fpk",
-              "sha256": "c8bd2583f1d47b26986eed5ebb888805e82262cbccf842bd6e169b23a70be2d4",
-              "size": 6331977
+              "sha256": "5369a510d66af1150446575359ad00afbcd9a61a1f840c0723e389175762718b",
+              "size": 6332126
             }
           }
         }
