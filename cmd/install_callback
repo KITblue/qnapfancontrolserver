@@ -1,0 +1,7 @@
+#!/bin/bash
+
+### 安装后回调：后台编译并安装 qnap8528 驱动（静默执行，无 UI）
+
+. "$(dirname "$0")/service-setup"
+service_postinst
+exit $?
