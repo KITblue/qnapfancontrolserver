@@ -8,5 +8,3 @@ maintainer            = KITblue
 maintainer_url        = https://github.com/KITblue
 distributor           = KITblue
 distributor_url       = https://github.com/KITblue
-desktop_uidir         = ui
-desktop_applaunchname = FanControlServer.Application
