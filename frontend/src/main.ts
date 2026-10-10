@@ -629,7 +629,7 @@ function renderFanCards() {
             const pwmVal = fan.manual_pwm;
             const pwmPct = fanPWMPercent(rt?.pwm ?? (manual ? fan.manual_pwm : undefined));
             return `
-<div class="bg-slate-900/40 rounded-2xl p-4 border border-slate-700/50" data-fan-idx="${idx}" data-fan-id="${esc(fan.id)}">
+<div class="bg-slate-900 rounded-xl p-4 border border-slate-700/60" data-fan-idx="${idx}" data-fan-id="${esc(fan.id)}">
   <div class="flex justify-between items-start mb-3">
     <div class="flex items-center gap-2.5 min-w-0">
       <div data-fan-icon-bg class="w-9 h-9 rounded-full ${stopped ? "bg-slate-700" : "bg-sky-500/10"} flex items-center justify-center flex-shrink-0">
