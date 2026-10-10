@@ -16,6 +16,10 @@ env:
   # 上游项目
   UPSTREAM_OWNER: 'guan-ry'
   UPSTREAM_REPO: 'FanControlServerApp'
+  # 主应用版本（manifest 中的 version，Auto-increment 步骤会更新此行）
+  APP_VERSION: '1.3.7.8'
+  # 主应用 FPK 资产名（与 fnpack.json 中 download_url 保持一致）
+  APP_ASSET: 'FanControlServer-v1.3.7.8-qnapfancontrol-iframe.fpk'
 
 jobs:
   sync:
@@ -105,6 +109,10 @@ jobs:
 
           # 同时更新 manifest 中的 env 中的版本引用（仅 sync.yml）
           echo "Manifest and sync.yml updated to $NEW_VERSION (from upstream $RAW)"
+
+          # 注入本次构建使用的版本环境变量
+          echo "APP_VERSION=${NEW_VERSION}" >> "$GITHUB_ENV"
+          echo "APP_ASSET=${NEW_ASSET}" >> "$GITHUB_ENV"
 
       - name: Build Frontend
         run: |
