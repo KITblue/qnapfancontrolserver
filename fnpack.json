@@ -27,12 +27,12 @@
       "desktop_uidir": "ui",
       "desktop_applaunchname": "FanControlServer.main",
       "releases": {
-        "1.3.7.4": {
+        "1.3.7.5": {
           "packages": {
             "x86": {
-              "download_url": "https://github.com/KITblue/qnapfancontrolserver/releases/download/v1.3.7.4/FanControlServer-v1.3.7.4-qnapfancontrol-iframe.fpk",
-              "sha256": "fef45774b2a93630ae246d6b5ef12fafe83f64d78943da4520d2891c84ff7788",
-              "size": 7074486
+              "download_url": "https://github.com/KITblue/qnapfancontrolserver/releases/download/v1.3.7.5/FanControlServer-v1.3.7.5-qnapfancontrol-iframe.fpk",
+              "sha256": "46e00af69d5b2da9a5a7f6a82c9a97ce65480793cadaad756456c5a1bcdb2379",
+              "size": 7073964
             }
           }
         }
