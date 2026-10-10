@@ -7,11 +7,11 @@
       "type": "iframe",
       "protocol": "",
       "gatewayPrefix": "/app/FanControlServer",
-      "gatewaySocket": "app.sock",
+      "gatewaySocket": "target/app.sock",
       "url": "/app/FanControlServer",
       "allUsers": false,
       "control": {
-        "auth": 0,
+        "auth": 2,
         "port": 2,
         "path": 2,
         "fullUrl": 2
