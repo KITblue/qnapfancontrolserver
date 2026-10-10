@@ -59,11 +59,11 @@ jobs:
           CURRENT=$(grep '^version' manifest | sed 's/version.*= *//; s/^ *//; s/ *$//')
           echo "Current manifest version: $CURRENT"
 
-          # 获取上游最新 Release tag
+          # 获取上游最新 Release tag（用 jq 解析，避免 grep+sed 在单行 JSON 下误解析）
           TAG=$(curl -s -H "Accept: application/vnd.github+json" \
             -H "User-Agent: FanControlServer" \
             "https://api.github.com/repos/${UPSTREAM_OWNER}/${UPSTREAM_REPO}/releases/latest" \
-            | grep '"tag_name"' | head -1 | sed 's/.*: *//; s/"//g; s/ //g')
+            | jq -r .tag_name)
           echo "Upstream latest tag: $TAG"
 
           # 解析上游版本号（去v/V前缀，去-beta等后缀，只取x.y.z.w）
