@@ -17,7 +17,7 @@ import (
 )
 
 const (
-	githubLatestURL  = "https://api.github.com/repos/guan-ry/FanControlServerApp/releases/latest"
+	githubLatestURL  = "https://api.github.com/repos/KITblue/qnapfancontrolserver/releases/latest"
 	successCacheTTL  = 6 * time.Hour
 	failureCacheTTL  = 10 * time.Minute
 	forceMinInterval = 30 * time.Second
