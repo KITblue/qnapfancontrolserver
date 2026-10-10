@@ -62,7 +62,7 @@ def sha256_of(path: Path) -> str:
 
 def read_manifest(fp: Path) -> dict:
     with tarfile.open(fp, "r:gz") as t:
-        raw = t.extractfile("manifest").read().decode("utf-8")
+        raw = t.extractfile("manifest").read().decode("utf-8", errors="replace")
     out = {}
     for line in raw.splitlines():
         if "=" in line:
