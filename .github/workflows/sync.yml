@@ -14,9 +14,9 @@ concurrency:
 
 env:
   # 主应用版本（manifest 中的 version）
-  APP_VERSION: '1.3.7.7'
+  APP_VERSION: '1.3.7.8'
   # 主应用 FPK 资产名（与 fnpack.json 中 download_url 保持一致）
-  APP_ASSET: 'FanControlServer-v1.3.7.7-qnapfancontrol-iframe.fpk'
+  APP_ASSET: 'FanControlServer-v1.3.7.8-qnapfancontrol-iframe.fpk'
 
 jobs:
   sync:
@@ -88,7 +88,7 @@ jobs:
           if ! gh release view "$TAG" >/dev/null 2>&1; then
             gh release create "$TAG" \
               --title "QNAP Fan Control $TAG" \
-              --notes "QNAP Fan Control $TAG — 从源码构建，IT8528 驱动已内置，安装即用。"
+              --generate-notes
           fi
           gh release upload "$TAG" "dist/${APP_ASSET}" --clobber
 
