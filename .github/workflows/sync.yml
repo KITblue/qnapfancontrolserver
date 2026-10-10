@@ -14,9 +14,9 @@ concurrency:
 
 env:
   # 主应用版本（manifest 中的 version）
-  APP_VERSION: '1.3.7.2'
+  APP_VERSION: '1.3.7.3'
   # 主应用 FPK 资产名（与 fnpack.json 中 download_url 保持一致）
-  APP_ASSET: 'FanControlServer-v1.3.7.2-qnapfancontrol-iframe.fpk'
+  APP_ASSET: 'FanControlServer-v1.3.7.3-qnapfancontrol-iframe.fpk'
 
 jobs:
   sync:
