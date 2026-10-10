@@ -55,8 +55,8 @@ jobs:
 
       - name: Auto-increment version from upstream
         run: |
-          # 读取 manifest 当前版本
-          CURRENT=$(grep '^version' manifest | sed 's/version.*= *//; s/^ *//; s/ *$//')
+          # 读取 manifest 当前版本（manifest 为 CRLF，需去除 \r 防算术报错）
+          CURRENT=$(grep '^version' manifest | sed 's/version.*= *//; s/^ *//; s/ *$//' | tr -d '\r')
           echo "Current manifest version: $CURRENT"
 
           # 获取上游最新 Release tag（用 jq 解析，避免 grep+sed 在单行 JSON 下误解析）
