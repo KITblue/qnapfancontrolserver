@@ -20,7 +20,7 @@
 qnapfancontrolserver/
 ├── backend/                  # FanControlServer Go 后端（交叉编译 linux/amd64）
 ├── frontend/                 # FanControlServer Web 前端（Vite，构建到 backend/web）
-├── app/                      # fnOS 应用运行时布局（server/、target/、ui/）
+├── app/                      # fnOS 应用运行时布局（server/、target/）
 ├── cmd/                      # fnOS 生命周期钩子（安装/卸载/升级/启停）
 ├── config/                   # fnOS 应用配置与权限
 ├── wizard/                   # 安装向导
