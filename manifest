@@ -1,5 +1,5 @@
 appname               = FanControlServer
-version               = 1.3.7.8
+version               = 1.3.7.9
 desktop_uidir         = ui
 desktop_applaunchname = FanControlServer.main
 display_name          = QNAP Fan Control
